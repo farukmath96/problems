@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prism.css">
+    <title>Document</title>
+    <style>
+        .body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            height: 45px;
+            background-color: aqua;
+        }
+
+        .dash {
+            background-color: rgb(226, 223, 223);
+            width: 220px;
+            min-height: 600px;
+        }
+
+        .side {
+            background-color: rgb(235, 234, 237);
+            width: 100%;
+        }
+
+        .items {
+            border: 1px solid black;
+            padding: 2px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .topicname {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Problem Solving</h1>
+    </header>
+
+    <div class="body">
+        <div class="dash">
+            <h3>Problems Name</h3>
+            <nav>
+                <div class="items">
+                    <a href="./fibonacci1.html">Fibonacci_1</a>
+                </div>
+                <div class="items">
+                    <a href="./fibonacci2.html">Fibonacci_2</a>
+                </div>
+                <div class="items">
+                    <a href="./binerysearch1.html">Binery Search</a>
+                </div>
+                <div class="items">
+                    <a href="./binerysearch2.html">Binery Search_2</a>
+                </div>
+                <div class="items">
+                    <a href="./power1.html">To The Power</a>
+                </div>
+                <div class="items">
+                    <a href="./power2.html">To The Power_2</a>
+                </div>
+                <div class="items">
+                    <a href="./power3.html">To The Power_3</a>
+                </div>
+                <div class="items">
+                    <a href="./arraySum.html">Array Sum</a>
+                </div>
+                <div class="items">
+                    <a href="./cube.html">Cube</a>
+                </div>
+                <div class="items">
+                    <a href="./reverseArray.html">Reverse Array</a>
+                </div>
+                <div class="items">
+                    <a href="./sortArray.html">Sort Array</a>
+                </div>
+                <div class="items">
+                    <a href="./sortArray2.html">Sort Array_2</a>
+                </div>
+                <div class="items">
+                    <a href="./shuffleArray.html">Shuffle Array</a>
+                </div>
+                <div class="items">
+                    <a href="./shuffleArray2.html">Shuffle Array_2</a>
+                </div>
+                <div class="items">
+                    <a href="./printNumbers.html">Print Numbers</a>
+                </div>
+                <div class="items">
+                    <a href="./factorial.html">Factorial Number</a>
+                </div>
+            </nav>
+        </div>
+        <div class="side">
+            <h2 class="topicname">Print Numbers</h2>
+            <pre>
+                <code class="language-js" >
+                    function printNumber(number) {
+                        if (number == 0) {
+                            return;
+                        }
+                        console.log(number);
+                        printNumber(number - 1);
+                    }
+                    printNumber(10);
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <script>
+        function printNumber(number) {
+            if (number == 0) {
+                return;
+            }
+            console.log(number);
+            printNumber(number - 1);
+        }
+        printNumber(10);
+    </script>
+    <script src="prism.js"></script>
+
+</body>
+
+</html>
